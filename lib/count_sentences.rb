@@ -30,8 +30,8 @@ class String
     #binding.pry
     delimiters = [".","?","!"]
     arr = self.split(Regexp.union(delimiters))
-    binding.pry
-    
+    #binding.pry
+    arr.delete_if{|x| x==""}
     arr.length
   end
 end
