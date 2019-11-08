@@ -31,6 +31,7 @@ class String
     delimiters = [".","?","!"]
     arr = self.split(Regexp.union(delimiters))
     binding.pry
+    
     arr.length
   end
 end
