@@ -28,7 +28,8 @@ class String
 
   def count_sentences
     #binding.pry
-    arr = self.split /.|!|?/
+    delimiters = []
+    arr = self.split(Regexp.union(delimiters))
     arr.length
   end
 end
