@@ -30,6 +30,6 @@ class String
     #binding.pry
     delimiters = [".","?","!"]
     arr = self.split(Regexp.union(delimiters))
-    arr.length
+    arr.length.uniq
   end
 end
